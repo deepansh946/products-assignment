@@ -1,0 +1,23 @@
+.app {
+  padding: 40px;
+  background-color: #faf9f6;
+}
+
+.component {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media screen and (min-width: 540px) {
+  .component {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .component {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
